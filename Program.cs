@@ -30,13 +30,13 @@ class Program
         int range = (DateTime.Today - start).Days;
         try
         {
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 100; i++)
             {
                 string name = path + i.ToString() + ".txt";
                 files.Add(name);
                 using (FileStream fs = File.Create(name))
                 { 
-                    for (int j = 0; j < 10; j++)
+                    for (int j = 0; j < 100000; j++)
                     {
                         string input = RandomDate(start, random, range).ToShortDateString();
                         input += "||" + RandomLatina() + "||" + RandomRussian() + "||" + RandomNumb() + "||" + RandomDouble() + "||" + "\n";
