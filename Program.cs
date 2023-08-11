@@ -10,19 +10,7 @@ class Program
     {
         ///Здесь создаются файлы и наполняются
         ///Также создается класс для работы с БД
-        Console.WriteLine("Введите путь для создания файлов.");
-        string? pathFromUser = Console.ReadLine();
-        string pathTest = @"H:\B1 задание\MyTXT";
-        string pathDefault = @"D:\MyTXT";
-        string? path;
-        if (pathFromUser != "")
-        {
-            path = pathFromUser;
-        }
-        else
-        {
-            path = pathDefault;
-        }
+        string path = @"D:\MyTXT";
         Console.WriteLine("Создание 100 файлов...");
         DateTime start = DateTime.Now.AddYears(-5);
         Random random = new Random();
@@ -58,7 +46,7 @@ class Program
             "Для подсчета суммы всех целых чисел и медианы всех дробных чисел нажмите 3\n" +
             "Для завершения программы введите 4");
         ///Далее в цикле пункты 2-3-4 из задания можно повторять
-        ///Также создается БД если ее нет и туда ипортируются все файлы
+        ///Также создается БД если ее нет и туда импортируются все файлы
         while (true) 
         {
             string? choice = Console.ReadLine();
