@@ -96,7 +96,7 @@ namespace Task_1
                             await command.ExecuteNonQueryAsync();
 
                             i += 5;
-                            Console.WriteLine($"{j}/{50 - j}");
+                            Console.WriteLine($"{j}/{10000000 - j}");
                             j++;
                         }
                     }
